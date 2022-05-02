@@ -19,13 +19,11 @@ const { NotImplementedError } = require('../extensions/index.js');
   push(element) {
     this.data.push(element);
   }
-
   pop() {
     let result = this.data[this.data.length-1];
     this.data.splice(this.data.length-1);
     return result;
   }
-
   peek() {
     let result = this.data[this.data.length-1];
     return result;
